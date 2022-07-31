@@ -1,0 +1,29 @@
+.user{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: rgba(245, 245, 245, 0.55);
+    transition: all 0.1s;
+     font-family: 'Work Sans', sans-serif;
+}
+
+
+.user >img {
+    height: 45px;
+    width: 45px;
+    margin: 1vmax;
+    border-radius: 100%;
+    border: 3px solid rgb(255, 201, 201);
+}
+
+.user > svg{
+    font-size: 53px;
+    margin: 1vmax;
+}
+h4{
+    font-size: 20px;
+}
+
+.user:hover{
+    color: white;
+}

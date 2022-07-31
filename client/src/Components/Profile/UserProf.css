@@ -1,0 +1,185 @@
+.imgInfo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3% 0%;
+}
+
+.imgInfo > img{
+    width: 225px;
+    height: 225px;
+    border-radius: 100%;
+    border: 3px solid #30475E;
+}
+
+.imgInfo > svg {
+    font-size: 220px;
+    color: rgba(240, 84, 84, 0.5);
+    border-radius: 5px solid rgba(240, 84, 84, 1);;
+}
+
+.text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0% 2% 2% 2%;
+}
+
+.smallText{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0% 0% 0% 0%;
+}
+
+.infoButtons > button{
+    border: 3px solid rgba(240, 84, 84, 0.5);
+    border-radius: 0%;
+    background-color: rgba(240, 84, 84, 0.7);;
+    color: white;
+    font-family: 'Work Sans', sans-serif;
+    padding: 15px;
+    font-size: 15px;
+    margin: 2px;
+}
+
+.infoButtons > button:hover{
+    background-color: rgba(240, 84, 84, 1);
+}
+
+.infoButtons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.postsText{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4% 0% 2% 0%;
+}
+
+.DialogBoxAll{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 10px;
+}
+
+.DialogBoxAll > button{
+    background-color: white;
+    color: rgba(240, 84, 84, 0.7);
+    font-family: 'Work Sans', sans-serif;
+    font-size: 22px;
+    display: flex;
+    flex-direction: column;
+    margin: -10px 10px 40px 10px;
+    text-align: center;
+}
+
+.DialogBoxAll > h1{
+    font-size: 30px;
+    font-family: 'Raleway', sans-serif;
+    color: #F05454;
+    padding: 60px;
+}
+
+.DialogBoxAll > button:hover{
+    text-decoration: underline;
+}
+
+
+.updFormAll{
+    display: flex;
+    flex-direction: column;
+}
+
+.updFormAll > img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.updFormAll > button{
+    background-color: white;
+    color: rgba(240, 84, 84, 0.7);
+    font-family: 'Work Sans', sans-serif;
+    font-size: 20px;
+    margin: 5px 10px 25px 10px;
+    text-align: center;
+
+    padding: 5px;
+}
+
+.updFormAll > button:hover{
+    text-decoration: underline;
+}
+
+.updFormAll > input[type="file"]{
+    display: none;
+}
+
+.updFormAll > label {
+    
+    padding: 0px 15px;
+
+    font-family: 'Work Sans', sans-serif;
+    font-size: 20px;
+    margin: 10px 10px 10px 10px;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+
+    border: 3px solid rgba(240, 84, 84, 0.5);
+    border-radius: 2px;
+    background-color: rgba(240, 84, 84, 0.7);;
+    color: white;
+}
+
+.updFormAll > label:hover{
+    background-color: rgba(240, 84, 84, 1);
+}
+
+
+.logDelete{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.logDelete > h1{
+    font-size: 30px;
+    font-family: 'Raleway', sans-serif;
+    color: #F05454;
+    padding: 30px;
+    text-align: center;
+}
+
+.logDelete > button{
+    color: white;
+    background-color: rgba(240, 84, 84, 0.7);
+    font-family: 'Work Sans', sans-serif;
+    font-size: 18px;
+    margin: 5px 10px 25px 10px;
+    text-align: center;
+    border-radius: 4px;
+    padding: 15px;
+}
+
+.logDelete > button:hover{
+    background-color: rgba(240, 84, 84, 1);
+}
+
+
+
+
+
+
+@media screen and (max-width: 372px) {
+    .infoButtons{
+        display: inline-block;
+    }
+}

@@ -1,0 +1,36 @@
+.commentUser {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+    color: rgb(48, 71, 94);
+    width: 100%;
+}
+
+.commentUser > a {
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+.commentUser > h5{
+    font-family: 'Raleway', sans-serif;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    padding: 0% 0% 20px 4%;
+    font-size: 17px;
+}
+
+.commentUser > Button > svg {
+    font-size: 20px;
+    color: rgb(48, 71, 94);
+}
+
+
+
+
+
+@media screen and (max-width: 390px) {
+    .commentUser > a {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+}

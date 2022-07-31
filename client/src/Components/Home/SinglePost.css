@@ -1,0 +1,216 @@
+.Post{
+    background-color: #e76f6f;
+    color: white;
+
+
+    padding: 1%;
+    margin: 1% 30% ;
+    border-radius: 15px;
+}
+
+.postTitle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1vmax;
+}
+
+.Post>img{
+    display:flex;
+    width:100%;
+    height:60%;
+    object-fit:cover;
+    /* border-radius: 25px; */
+}
+.Post>img:nth-child(5n){
+    grid-column-end: span 2;
+}
+
+.text> h2{
+    font-size: 15px;
+    padding: 2%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    font-family: 'Work Sans', sans-serif;
+}
+
+.postTitle>h1{
+    font-size: 20px;
+}
+
+.details{
+    /* display: flex; */
+    display: grid;
+    grid-template-columns: 10fr 1fr;
+
+}
+.details > button{
+    align-items: right;
+}
+
+.details > svg{
+    font-size: 53px;
+    margin: 1vmax;
+    border-radius: 100%;
+}
+
+button{
+    border: none;
+    background-color: #e76f6f;
+    color: white;
+    cursor: pointer;
+}
+
+button > h5{
+    font-size: 15px;
+    margin: 10px 10px 10px 10px;
+}
+
+.postBottom{
+    display: block;
+}
+
+
+Button > svg {
+    font-size: 15px;
+    color: #90dcfa
+}
+
+
+
+.DialogBox{
+    min-width: 300px;
+    height: 50vh;
+    padding: 2.5vmax;
+    background-color: white;
+}
+
+.DialogBox > h1{
+    font-size: 30px;
+    font-family: 'Raleway', sans-serif;
+    color: #F05454;
+    padding: 0px 0px 20px 0px;
+}
+
+.likeUserName{
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+}
+
+.commForm {
+    display: flex;
+}
+
+.commForm > input {
+width: 70%;
+padding: 15px;
+border: 3px solid rgba(240, 84, 84, 0.5);
+font-size: 15px;
+
+}
+
+.commForm > button {
+border: 3px solid rgba(240, 84, 84, 0.5);
+background-color: rgba(240, 84, 84, 0.7);
+color: white;
+font-family: 'Work Sans', sans-serif;
+padding: 0px 15px;
+font-size: 15px;
+}
+
+.commForm > button:hover{
+    background-color: rgba(240, 84, 84, 1);
+}
+
+.likeCommentText{
+    display: inline-block;
+}
+
+.DialogBox > h4{
+    font-size: 25px;
+    font-family: 'Raleway', sans-serif;
+    color: #F05454;
+    padding: 40% 5%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.deletePost > h5{
+    font-size: 15px;
+    margin: 10px 10px 10px 10px;
+}
+
+.child {
+    display: inline-block;
+}
+  
+
+/* 
+.likeText{
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+.commentText{
+    grid-column-start: 2;
+    grid-column-end: 3;
+} */
+
+
+.updForm {
+    display: flex;
+    flex-direction: column;
+}
+
+.updForm > input {
+width: 70%;
+padding: 15px;
+border: 3px solid rgba(240, 84, 84, 0.5);
+font-size: 15px;
+padding: 15px 40px;
+}
+
+.updForm > button {
+border: 3px solid rgba(240, 84, 84, 0.5);
+background-color: rgba(240, 84, 84, 0.7);
+border-radius: 5px;
+color: white;
+font-family: 'Work Sans', sans-serif;
+padding: 15px;
+font-size: 15px;
+}
+
+.updForm > button:hover{
+    background-color: rgba(240, 84, 84, 1);
+}
+
+
+
+
+@media screen and (max-width: 600px) {
+    .Post{
+        margin: 5% 5%;
+        border-radius: 3px;
+    }
+}
+@media screen and (max-width: 390px) {
+    .commForm {
+        display: inline-block;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .Post{
+        margin: 1% 20% ;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .Post{
+        margin: 1% 10% ;
+    }
+}

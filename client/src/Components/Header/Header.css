@@ -1,0 +1,62 @@
+.header{
+    background-color: rgba(48, 71, 94, 0.1);
+    border: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 0px 15px 0px;
+}
+
+.header > a {
+    width: 1vmax;
+    height: 1vmax;
+    margin: 2vmax 2vmax;
+}
+
+.header > a > svg {
+    font-size: 30px;
+    transition: 0.3s;
+    color: rgba(18, 18, 18, 0.65);
+}
+
+.header > a > svg:hover {
+    transform: scale(1.4);
+}
+
+.header > button {
+    width: 1vmax;
+    height: 1vmax;
+    margin: 2vmax 2vmax;
+    background-color: #ecebeb;
+}
+
+.header > button > svg {
+    font-size: 30px;
+    transition: 0.3s;
+    color: rgba(18, 18, 18, 0.65);
+}
+
+.header > button > svg:hover {
+    transform: scale(1.4);
+}
+
+.img > a > img{
+    margin: 22px 0px 0px 0px;
+}
+
+.searchDialogBox{
+    min-width: 300px;
+    height: 50vh;
+    padding: 2.5vmax;
+    background-color: #F05454;
+    overflow:auto
+}
+
+@media screen and (max-width: 1100px){
+    .header > a > svg {
+        font-size: 3vmax;
+    }
+    .header > button > svg {
+        font-size: 3vmax;
+    }
+}

@@ -1,0 +1,36 @@
+.home{
+    overflow-y: auto;
+    height: 100vh;
+
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    height: 100vh;
+    background-color: rgb(240, 84, 84, 0.8);
+}
+
+h3{
+    font-size: 30px;
+    text-align: center;
+    padding: 10px 0px 15px 0px;
+    color: #F5F5F5;
+}
+
+.profileright{
+    padding: 15px;
+    display: inline-block;
+    white-space: nowrap;
+    width: 80%;
+    overflow: hidden;
+}
+
+.profileleft{
+    background-color: #F5F5F5;
+}
+
+@media screen and (max-width: 600px) {
+    .home{
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        height: auto;
+    }
+}

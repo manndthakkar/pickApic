@@ -1,0 +1,110 @@
+.UploadPost {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2%;
+    box-sizing: border-box;
+}
+
+.uploadPostForm > h3{
+    color: #FF8FB1;
+}
+
+.uploadPostForm {
+background-color: #FCE2DB;
+height: 100%;
+width: 50%;
+border-radius: 12px;
+box-sizing: border-box;
+padding: 3% 5% 5% 5%;
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+.uploadPostForm > img {
+width: 100%;
+object-fit: cover;
+}
+
+.uploadPostForm > input[type="text"] {
+width: 100%;
+padding: 15px;
+border: 3px solid #fab6cb;
+outline: none;
+font-size: 20px;
+font-family: 'Raleway', sans-serif;
+color: #30475E;
+}
+
+.upload{
+    background-color: white;
+}
+
+.uploadPostForm > input[type="file"]::-webkit-file-upload-button {
+    border: 3px solid rgba(240, 84, 84, 0.5);
+    border-radius: 2px;
+    background-color: rgba(240, 84, 84, 0.7);;
+    color: white;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 15px;
+}
+
+.uploadPostForm > button{
+    border: 1px solid rgba(240, 84, 84, 0.5);
+    border-radius: 2px;
+    background-color: rgba(240, 84, 84, 0.7);;
+    color: white;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 22px;
+    margin: 10px;
+    text-align: center;
+    padding: 5px 48.5%;
+}
+
+.uploadPostForm > button:hover{
+    background-color: rgba(240, 84, 84, 1);
+}
+
+.uploadPostForm > input[type="file"]{
+    display: none;
+}
+
+.uploadPostForm > label {
+    
+    padding: 5px 15px;
+
+
+    border: 1px solid rgba(240, 84, 84, 0.5);
+    border-radius: 2px;
+    background-color: rgba(240, 84, 84, 0.7);;
+    color: white;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 22px;
+    margin: 10px 10px 30px 10px;
+    width: 100%;
+    text-align: center;
+    cursor: pointer;
+    
+}
+
+.uploadPostForm > label:hover{
+    background-color: rgba(240, 84, 84, 1);
+}
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1000px) {
+.uploadPostForm {
+    width: 100%;
+}
+.uploadPostForm > label{
+    margin: 10px 10px 15px 10px;
+}
+}

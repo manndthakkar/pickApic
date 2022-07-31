@@ -1,0 +1,32 @@
+
+
+
+.searchForm{
+    display: flex;
+    flex-direction: column;
+}
+
+.searchForm > h3 {
+    color: white;
+    font-family: 'Work Sans', sans-serif;
+}
+
+
+.searchForm > button{
+    background-color: rgba(240, 84, 84, 0.7);
+    color: white;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 18px;
+    margin: 5px 10px 25px 10px;
+    text-align: center;
+    padding: 5px;
+}
+
+
+.searchForm > button:hover{
+    text-decoration: underline;
+}
+
+.searchResults > ListUser {
+    margin: 20px;
+}
