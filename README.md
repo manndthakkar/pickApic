@@ -1,6 +1,6 @@
 # pickApic
 A Full Stack Photo Sharing Social Media app - Pickapic.
-- The app was made using HTML, CSS and Javascript for the frontend, and React as the frontend frameword. 
+- The app was made using HTML, CSS and Javascript for the frontend, with React as the frontend frameword. 
 - NodeJS was used for the Backend, with ExpressJS as the Backend Framework.
 - MongoDB's NoSQL Database was used to strore user and Post Information.
 
