@@ -40,16 +40,6 @@ cloudinary.config({
 
 app.use('/feed', feedRouter);
 app.use('/user', userRouter);
-
-app.use(express.static(path.join(__dirname, '../client/build')));
-app.get('*', (req, res) => {
-  res.sendFile(path.resolve(__dirname, '../client/build/index.html'))
-})
-
-// app.get("/feed", async (req, res) => {
-//   const myPost = await Post.find().populate("author likes comments.author");
-//   res.send(myPost);
-// })
  
 app.listen(port, () => {
     console.log(`Server is running on port: ${port}`);

@@ -6,7 +6,7 @@ export const likePost = (id) => async(dispatch) => {
         dispatch({
             type: "likeRequest"
         })  
-        const {data} = await axios.get(`https://pickapicstayconnected.herokuapp.com/feed/${id}`)
+        const {data} = await axios.get(`/feed/${id}`)
         // Redux: 
         dispatch({
             type: "likeSuccess",
@@ -29,7 +29,7 @@ export const commentPost = (id, comment) => async(dispatch) => {
             type: "commentRequest"
         })  
 
-        const {data} = await axios.post(`https://pickapicstayconnected.herokuapp.com/feed/post/comments/${id}`, {comment}, {headers: {"Content-Type": "application/json"}})
+        const {data} = await axios.post(`/feed/post/comments/${id}`, {comment}, {headers: {"Content-Type": "application/json"}})
         // Redux: 
         dispatch({
             type: "commentSuccess",
@@ -52,7 +52,7 @@ export const deleteCommentPost = (id, commID) => async(dispatch) => {
             type: "deleteCommentRequest"
         })  
 
-        const { data } = await axios.delete(`https://pickapicstayconnected.herokuapp.com/feed/post/comments/${id}`, {
+        const { data } = await axios.delete(`/feed/post/comments/${id}`, {
             data: { commID },
           });
           
@@ -81,7 +81,7 @@ export const addNewPost = (title, text, img) => async(dispatch) => {
 
         if(!img) img = false
 
-        const { data } = await axios.post("https://pickapicstayconnected.herokuapp.com/feed/upload", {
+        const { data } = await axios.post("/feed/upload", {
             title, text, img
           }, {headers: { "Content-Type" : "application/json" }});
           
@@ -107,7 +107,7 @@ export const updatePost = (title, caption, id) => async(dispatch) => {
             type: "updatePostRequest"
         })  
 
-        const { data } = await axios.put(`https://pickapicstayconnected.herokuapp.com/feed/:${id}`, {
+        const { data } = await axios.put(`/feed/${id}`, {
             title, caption
           }, {headers: { "Content-Type" : "application/json" }});
           
@@ -133,7 +133,7 @@ export const deletePost = (id) => async(dispatch) => {
             type: "deletePostRequest"
         })  
 
-        const { data } = await axios.delete(`https://pickapicstayconnected.herokuapp.com/feed/${id}`);
+        const { data } = await axios.delete(`/feed/${id}`);
           
         // Redux: 
         dispatch({

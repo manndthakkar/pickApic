@@ -7,7 +7,7 @@ export const loginUser = (email, pass) => async(dispatch) => {
             type: "LoginRequest"
         })
         // user/login and post request - API Call
-        const {data} = await axios.post("https://pickapicstayconnected.herokuapp.com/user/login", ({email: email, password: pass}), {
+        const {data} = await axios.post("/user/login", ({email: email, password: pass}), {
             headers: {
                 "Content-Type": "application/json"
             }
@@ -34,7 +34,7 @@ export const loadUser = () => async(dispatch) => {
         dispatch({
             type: "LoadUserRequest"
         })
-        const {data} = await axios.get("https://pickapicstayconnected.herokuapp.com/user/myprofile")
+        const {data} = await axios.get("/user/myprofile")
         
         // Redux: 
         dispatch({
@@ -57,7 +57,7 @@ export const getPosts = () => async(dispatch) => {
         dispatch({
             type: "getPostsRequest"
         })  
-        const {data} = await axios.get("https://pickapicstayconnected.herokuapp.com/feed/")
+        const {data} = await axios.get("/feed/")
         
         // Redux: 
         dispatch({
@@ -80,7 +80,7 @@ export const getUsers = (name = "") => async(dispatch) => {
         dispatch({ 
             type: "getUsersRequest"
         })  
-        const {data} = await axios.get(`https://pickapicstayconnected.herokuapp.com/user?name=${name}`)
+        const {data} = await axios.get(`/user?name=${name}`)
         // Redux: 
         dispatch({
             type: "getUsersSuccess",
@@ -102,7 +102,7 @@ export const getMyPosts = () => async(dispatch) => {
         dispatch({
             type: "getMyPostsRequest"
         })  
-        const {data} = await axios.get("https://pickapicstayconnected.herokuapp.com/user/myprofile/posts")
+        const {data} = await axios.get("/user/myprofile/posts")
         
         // Redux: 
         dispatch({
@@ -127,7 +127,7 @@ export const logoutUser = () => async(dispatch) => {
             type: "LogoutUserRequest"
         })
         // user/login and post request - API Call
-        const {data} = await axios.get("https://pickapicstayconnected.herokuapp.com/user/logout")
+        const {data} = await axios.get("/user/logout")
 
         // Redux: 
         dispatch({
@@ -151,7 +151,7 @@ export const registerUser = (name, email, password, img) => async(dispatch) => {
             type: "RegisterRequest"
         })
         // user/login and post request - API Call
-        const {data} = await axios.post("https://pickapicstayconnected.herokuapp.com/user/register", ({name, email, password, img}), {
+        const {data} = await axios.post("/user/register", ({name, email, password, img}), {
             headers: {
                 "Content-Type": "application/json"
             }
@@ -179,7 +179,7 @@ export const updateName = (name) => async(dispatch) => {
             type: "updateProfileRequest"
         })
         // user/login and post request - API Call
-        const {data} = await axios.put("https://pickapicstayconnected.herokuapp.com/user/upd/name", ({newName: name}), {
+        const {data} = await axios.put("/user/upd/name", ({newName: name}), {
             headers: {
                 "Content-Type": "application/json"
             }
@@ -207,7 +207,7 @@ export const updateEmail = (email) => async(dispatch) => {
             type: "updateProfileRequest"
         })
         // user/login and post request - API Call
-        const {data} = await axios.put("https://pickapicstayconnected.herokuapp.com/user/upd/email", ({newEmail: email}), {
+        const {data} = await axios.put("/user/upd/email", ({newEmail: email}), {
             headers: {
                 "Content-Type": "application/json"
             }
@@ -235,7 +235,7 @@ export const changePassword = (oldPass, newPass) => async(dispatch) => {
             type: "updateProfileRequest"
         })
         // user/login and post request - API Call
-        const {data} = await axios.put("https://pickapicstayconnected.herokuapp.com/user/upd/password", ({oldPass, newPass}), {
+        const {data} = await axios.put("/user/upd/password", ({oldPass, newPass}), {
             headers: {
                 "Content-Type": "application/json"
             }
@@ -264,7 +264,7 @@ export const changeProfilePicture = (img) => async(dispatch) => {
             type: "updateProfileRequest"
         })
         // user/login and post request - API Call
-        const {data} = await axios.put("https://pickapicstayconnected.herokuapp.com/user/upd/img", ({img}), {
+        const {data} = await axios.put("/user/upd/img", ({img}), {
             headers: {
                 "Content-Type": "application/json"
             }
@@ -294,7 +294,7 @@ export const deleteUser = () => async(dispatch) => {
             type: "DeleteUserRequest"
         })
         // user/login and post request - API Call
-        const {data} = await axios.delete("https://pickapicstayconnected.herokuapp.com/user/delete/user")
+        const {data} = await axios.delete("/user/delete/user")
 
         // Redux: 
         dispatch({  
@@ -317,9 +317,7 @@ export const getOtherUser = (id) => async(dispatch) => {
         dispatch({
             type: "getUserRequest"
         })  
-
-        
-        const {data} = await axios.get(`https://pickapicstayconnected.herokuapp.com/user/profile/${id}`)
+        const {data} = await axios.get(`/user/profile/${id}`)
         // Redux: 
         dispatch({
             type: "getUserSuccess",
@@ -341,7 +339,7 @@ export const getOtherUserPosts = (id) => async(dispatch) => {
         dispatch({
             type: "getUserPostsRequest"
         })  
-        const {data} = await axios.get(`https://pickapicstayconnected.herokuapp.com/user/posts/${id}`)
+        const {data} = await axios.get(`/user/posts/${id}`)
         
         // Redux: 
         dispatch({
