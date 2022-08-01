@@ -1,6 +1,6 @@
 # pickApic
 A Full Stack Photo Sharing Social Media app - Pickapic.
-Using pickApic, a user can share their memories to the world in the form of photos. Users can add a title and a caption to the post and even edit it in the future. A user can also like and comment someone else's posts, along with many more functionalities described below.
+Using pickApic, a user can share their memories to the world in the form of photos. Users can add a title and a caption to the post and even edit it in the future. A user can also like and comment on someone else's posts, along with many more functionalities described below.
 
 - The app was made using HTML, CSS and Javascript for the frontend, with React as the frontend frameword. 
 - NodeJS was used for the Backend, with ExpressJS as the Backend Framework.
