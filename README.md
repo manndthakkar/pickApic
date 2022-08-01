@@ -1,6 +1,15 @@
 # pickApic
 A Full Stack Photo Sharing Social Media app made using the MERN framework
 
+
+
+
+https://user-images.githubusercontent.com/97929147/182185890-2aa3bf52-7fe6-4929-962e-74613f0ffd4e.mp4
+
+
+
+
+
 A complete video walkthrough is provided below:
 
 a) Creating a new User, and checking all the users and the posts uploaded by them:
