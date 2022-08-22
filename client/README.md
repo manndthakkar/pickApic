@@ -1,6 +1,6 @@
-# Getting Started with Create React App
+# Client Side of the PickAPic application
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Uses ReactJS as the frontend framework along with Redux to manage the application state, and MaterialUI to create the GUI
 
 ## Available Scripts
 
