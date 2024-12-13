@@ -1,4 +1,4 @@
-# pickApic: https://pickapic.social/
+# pickApic
 A Full Stack Photo Sharing Social Media app - Pickapic.
 Using pickApic, a user can share their memories to the world in the form of photos. Users can add a title and a caption to the post and even edit it in the future. A user can also like and comment on someone else's posts, along with many more functionalities described below.
 
